@@ -1,2 +1,90 @@
 // @import "@fortawesome/fontawesome-free/css/all.css";
 // @import "node_modules/bootstrap/scss/bootstrap";
+$bleufonce: #1d3b3a;
+$vert: #377a6c;
+$vertclaire: #accdb1;
+$orange: #f25a38;
+$font: verdana;
+
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+.spaceAround {
+  justify-content: space-around;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.center {
+  justify-content: center;
+}
+.alignself {
+  align-self: flex-end;
+}
+.majuscule {
+  text-transform: uppercase;
+}
+// barre nav
+nav {
+  background-color: $vert;
+  text-decoration: unset;
+  height: 50px;
+  padding: 2px;
+  ul {
+    align-items: center;
+    li {
+      list-style: none;
+      align-self: center;
+      color: $vertclaire;
+      font-family: $font;
+    }
+  }
+}
+// main acceuil
+.acceuil {
+  height: 500px;
+  width: 1000px;
+  background-color: $bleufonce;
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  div {
+    height: 550px;
+    width: 1000px;
+    background-color: $vertclaire;
+    position: relative;
+    top: 70px;
+    left: 150px;
+    article {
+      height: 500px;
+      width: 750px;
+
+      padding: 80px;
+      position: relative;
+      top: 20px;
+      left: 100px;
+      font-family: $font;
+      button {
+        background-color: $vertclaire;
+        border: 2px solid $bleufonce;
+        border-radius: 5px;
+        color: $bleufonce;
+        position: relative;
+        top: 100px;
+        left: 550px;
+        height: 50px;
+        width: 200px;
+        font-family: $font;
+      }
+    }
+  }
+}
+
+.milieu {
+  text-align: center;
+  padding: 20px;
+}
