@@ -23,7 +23,6 @@ function render(arr) {
     form += '</form>';
     form += '</div>';
   }
-
   // injecter dans le html
   mainHtml.innerHTML = form;
 }
