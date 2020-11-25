@@ -21,61 +21,51 @@ export const data = [
   // question1
   {
     id: 1,
-    question: 'Dans une conversation du groupe sur whatsapp vous êtes plutôt du genre à:',
+    question: 'Dans une conversation de groupe sur WhatsApp vous êtes plutôt du genre à: ',
     reponses: [
-      { r: 'vouloir être le centre dattention', p: 'Hedy Lamarr' },
+      { r: "vouloir être le centre de l'attention", p: 'Hedy Lamarr' },
       { r: 'écouter et rester en retrait', p: 'Joan Clarke' },
       { r: 'vouloir être l’admin du groupe', p: 'Margaret Hamilton' },
-      { r: 'utiliser une panoplie d’emojis et de Gifs', p: 'Roberta William' },
+      { r: 'utiliser une panoplie d’émojis et de gifs', p: 'Roberta William' },
     ],
   },
   // question2
   {
     id: 2,
-    question: 'Lors d’une escapade vous êtes plutôt du genre à:',
+    question: 'Lors d’une escapade vous êtes plutôt du genre à: ',
     reponses: [
       { r: 'trouver la sortie dans le plus grand labyrinthe du monde', p: 'Joan Clarke' },
       { r: 'aller voir un cabaret', p: 'Hedy Lamarr' },
-      { r: 'Faire un Safari', p: 'Roberta William' },
-      { r: 'a prendre un vol aller retour sur la lune', p: 'Margaret Hamilton' },
+      { r: 'faire un safari', p: 'Roberta William' },
+      { r: 'à prendre un vol aller retour sur la lune', p: 'Margaret Hamilton' },
     ],
   },
   // question3
   {
     id: 3,
-    question: 'Quel style de jeu êtes vous?:',
+    question: 'Quel style de jeu êtes-vous?',
     reponses: [
       { r: 'Cluedo', p: 'Joan Clarke' },
       { r: 'Dixit', p: 'Roberta William' },
       { r: 'Super Mario Galaxy', p: 'Margaret Hamilton' },
-      { r: 'Un jeu de rôle  + ajouter un emoji sexy', p: 'Hedy Lamarr' },
+      { r: 'Un jeu de rôle  <span>&#128579;</span>', p: 'Hedy Lamarr' },
     ],
   },
   // question4
   {
     id: 4,
-    question: 'Qu’est ce qui vous définit le mieux ?:',
+    question: 'Qu’est-ce qui vous définit le mieux ? ',
     reponses: [
       { r: 'La créativité', p: 'Roberta William' },
-      { r: 'Lambition', p: 'Margaret Hamilton' },
+      { r: "L'ambition", p: 'Margaret Hamilton' },
       { r: 'La logique', p: 'Joan Clarke' },
-      { r: 'Lintrépidité', p: 'Hedy Lamarr' },
+      { r: "L'intrépidité", p: 'Hedy Lamarr' },
     ],
   },
   // question5
+
   {
     id: 5,
-    question: 'Dans une conversation du groupe sur whatsapp vous êtes plutôt du genre à',
-    reponses: [
-      { r: 'vouloir être le centre dattention', p: 'Hedy Lamarr' },
-      { r: 'écouter et rester en retrait', p: 'Joan Clarke' },
-      { r: 'vouloir être l’admin du groupe', p: 'Margaret Hamilton' },
-      { r: 'utiliser une panoplie d’emojis et de Gifs', p: 'Roberta William' },
-    ],
-  },
-  // question6
-  {
-    id: 6,
     question: 'Si vous pouviez être un film, ça serait lequel ?',
     reponses: [
       { r: '2001 Lodysée de lespace', p: 'Margaret Hamilton' },
@@ -84,10 +74,10 @@ export const data = [
       { r: 'Enigma', p: 'Joan Clarke' },
     ],
   },
-  // question7
+  // question6
   {
-    id: 7,
-    question: 'Si tu gagnes à leuro-millions quest ce que tu achètes en premier ? ',
+    id: 6,
+    question: "Si tu gagnes à l'euro-millions qu'est-ce-que tu achètes en premier ? ",
     reponses: [
       { r: 'Les crypto monnaies', p: 'Joan Clarke' },
       { r: 'Un label musical', p: 'Hedy Lamarr' },
@@ -95,10 +85,10 @@ export const data = [
       { r: 'Une planète', p: 'Margaret Hamilton' },
     ],
   },
-  // question8
+  // question7
   {
-    id: 8,
-    question: 'Quelle couleur te représente ?: ',
+    id: 7,
+    question: 'Quelle couleur te représente ? ',
     reponses: [
       { r: 'Violet', p: 'Margaret Hamilton' },
       { r: 'Orange', p: 'Roberta William' },

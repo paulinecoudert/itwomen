@@ -13,8 +13,6 @@ function render(arr) {
     form += `<h2>Question ${item.id}/8</h2>`;
     form += `<p>${item.question}</p>`;
     // iterer sur item.reponses
-
-    // let reponse = '';
     for (const rep of item.reponses) {
       form += `<input type ="radio" name="reponse"> ${rep.r}<br>`;
     }
@@ -28,5 +26,6 @@ function render(arr) {
 }
 render(data);
 
+// cela n'affiche que le premier
 const forms = document.querySelectorAll('.formulaire');
 forms[0].style.display = 'block';
