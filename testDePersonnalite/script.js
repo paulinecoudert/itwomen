@@ -8,11 +8,17 @@ function render(arr) {
   const mainHtml = document.querySelector('main');
   let form = '';
   for (const item of arr) {
-    form += '<div class="formulaire" style="display:block">';
+    form += '<div class="formulaire" style="display:none">';
     form += '<form method="POST" action="#">';
     form += `<h2>Question ${item.id}/8</h2>`;
     form += `<p>${item.question}</p>`;
     // iterer sur item.reponses
+
+    // let reponse = '';
+    for (const rep of item.reponses) {
+      form += `<input type ="radio" name="reponse"> ${rep.r}<br>`;
+    }
+
     form += '<input type="submit" value="Question suivante" />'; // ajouter un addeventlistener
     form += '</form>';
     form += '</div>';
@@ -22,3 +28,6 @@ function render(arr) {
   mainHtml.innerHTML = form;
 }
 render(data);
+
+const forms = document.querySelectorAll('.formulaire');
+forms[0].style.display = 'block';
