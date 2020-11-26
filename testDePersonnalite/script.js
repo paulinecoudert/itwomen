@@ -13,20 +13,22 @@ function render(arr) {
   for (const item of arr) {
     form += `<div id=${item.id} class="formulaire test-form" style="display:none" >`;
     // form += '<form method="POST" action="">';
-    form += `<h2>Question ${item.id}/7</h2>`;
+    form += `<h2 class="marg">Question ${item.id}/7</h2>`;
+    form += '<div class="parQst">';
     form += `<p>${item.question}</p>`;
+    form += '</div>';
     // iterer sur item.reponses
     for (let i = 0; i < item.reponses.length; i++) {
       const rep = item.reponses[i];
       if (i === 0) {
-        form += `<input class="radio" type="radio" name="reponse${item.id}" value="${rep.p}" checked> ${rep.r}<br>`;
+        form += `<input class="radio marg" type="radio" name="reponse${item.id}" value="${rep.p}" checked> ${rep.r}<br>`;
       } else {
-        form += `<input class="radio" type="radio" name="reponse${item.id}" value="${rep.p}"> ${rep.r}<br>`;
+        form += `<input class="radio marg" type="radio" name="reponse${item.id}" value="${rep.p}"> ${rep.r}<br>`;
       }
     }
 
     if (item.id === 7) {
-      form += '<input type="submit" id="bouton" value="Voir mes résultats" class="boutonFinish" style="display:block"/>';
+      form += '<input type="submit" id="boutonResult" value="Voir mes résultats" class="boutonFinish" style="display:block"/>';
     } else {
       form += `<input type="submit" id="bouton" value="Question suivante" class="boutonSuivant${item.id}" style="display:block" />`; // ajouter un addeventlistener
     }

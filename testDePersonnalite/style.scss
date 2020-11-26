@@ -1,4 +1,4 @@
-// @import "@fortawesome/fontawesome-free/css/all.css";
+@import "@fortawesome/fontawesome-free/css/all.css";
 @import "node_modules/bootstrap/scss/bootstrap";
 $bleufonce: #1d3b3a;
 $vert: #377a6c;
@@ -28,8 +28,57 @@ main {
   margin-top: 100px;
 }
 
-.formulaire {
-  margin: 20px;
+h2, p, input  {
+  font-family: $font;
+  text-align: justify;
+}
+h2 {
+  margin-top: 10px;
+}
+#bouton {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  bottom: 5px;
+  left: 350px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: $vert;
+    color: white;
+    text-align: center;
+    display: block;
+
+}
+
+#boutonResult {
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+      width: 200px;
+      height: 40px;
+      border-radius: 20px;
+      border: 1px solid white;
+      cursor: pointer;
+      background-color: #f25a38;
+      color: white;
+      text-align: center;
+      display: block;
+  
+  
+}
+
+.parQst {
+  background-color: #accdb1;
+  margin: 10px 0 10px 0;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 5px;
+}
+.marg {
+  margin-left: 20px;
 }
 // new
 .flex {
@@ -50,6 +99,8 @@ main {
 .majuscule {
   text-transform: uppercase;
 }
+
+
 // barre nav
 nav {
   background-color: $vert;
@@ -58,14 +109,42 @@ nav {
   padding: 2px;
   ul {
     align-items: center;
+    line-height: 50px;
+     
     li {
       list-style: none;
       align-self: center;
       color: $vertclaire;
       font-family: $font;
+
     }
   }
 }
+
+a:link 
+{ 
+ text-decoration:none; 
+} 
+
+a:visited {
+  text-decoration:none; 
+  background-color: $vert;
+  color: $vertclaire;
+  font-family: $font;
+
+}
+
+a:hover {
+  text-decoration: underline overline white;
+
+}
+
+a:active {
+  background-color: white;
+  color: $vert;
+
+}
+
 
 .resultat {
   height: 500px;
@@ -122,3 +201,4 @@ footer {
     }
   }
 }
+

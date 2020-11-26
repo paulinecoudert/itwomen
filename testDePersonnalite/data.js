@@ -48,7 +48,7 @@ export const data = [
       { r: 'Cluedo', p: 'Joan Clarke' },
       { r: 'Dixit', p: 'Roberta William' },
       { r: 'Super Mario Galaxy', p: 'Margaret Hamilton' },
-      { r: 'Un jeu de rôle  <span>&#128579;</span>', p: 'Hedy Lamarr' },
+      { r: 'Un jeu de rôle', p: 'Hedy Lamarr' },
     ],
   },
   // question4
