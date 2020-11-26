@@ -4,6 +4,12 @@
 // @import "@fortawesome/fontawesome-free/css/all.css";
 // @import "node_modules/bootstrap/scss/bootstrap";
 
+$bleufonce: #1d3b3a;
+$vert: #377a6c;
+$vertclaire: #accdb1;
+$orange: #f25a38;
+$font: verdana;
+
 * {
     box-sizing: border-box;
 }
@@ -35,24 +41,54 @@ main {
 
   
   .formulaire {
-    margin: auto;
     margin-bottom: 10px;
     width: 600px;
     text-align: center;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 255, 0.2);
     display: none;
+    position: absolute;
+    top: 70px;
+    right: 50px;
+    background-color:  #accdb1;
   }
   
   #btn {
     display: block;
     margin: auto;
-    width: 150px;
-    height: 30px;
+    width: 200px;
+    height: 40px;
     border-radius: 20px;
-    background-color: teal;
+    background-color: $vert;
     border: 1px solid white;
     color: white;
     cursor: pointer;
+  }
+
+  .effacer, .envoyer {
+    margin: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid white;
+    cursor: pointer;
+
+  }
+
+  .envoie {
+    background-color: $vert;
+    color: white;
+  }
+  .envoie:disabled {
+    background-color: red; 
+    cursor: default;
+    &:hover {
+      background-color:red;
+    }
+  }
+
+  .effacer {
+    background-color: white;
+    color: black;
   }
   
   form > div {
@@ -78,3 +114,132 @@ main {
 .pop-up {
     display: none;
 }
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+.spaceAround {
+  justify-content: space-around;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.center {
+  justify-content: center;
+}
+.alignself {
+  align-self: flex-end;
+}
+.majuscule {
+  text-transform: uppercase;
+}
+
+$bleufonce: #1d3b3a;
+$vert: #377a6c;
+$vertclaire: #accdb1;
+$orange: #f25a38;
+$font: verdana;
+
+.flex {
+  display: flex;
+}
+.spaceAround {
+  justify-content: space-around;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.center {
+  justify-content: center;
+}
+.alignself {
+  align-self: flex-end;
+}
+.majuscule {
+  text-transform: uppercase;
+}
+
+// barre nav
+nav {
+  background-color: $vert;
+  text-decoration: unset;
+  height: 50px;
+  padding: 2px;
+  ul {
+    align-items: center;
+    line-height: 50px;
+     
+    li {
+      list-style: none;
+      align-self: center;
+      color: $vertclaire;
+      font-family: $font;
+
+    }
+  }
+}
+
+a:link 
+{ 
+ text-decoration:none; 
+} 
+
+a:visited {
+  text-decoration:none; 
+  background-color: $vert;
+  color: $vertclaire;
+  font-family: $font;
+
+}
+
+a:hover {
+  text-decoration: underline overline white;
+
+}
+
+a:active {
+  background-color: white;
+  color: $vert;
+
+}
+
+
+  .btnPopup:hover{
+    background-color: rgb(192, 192, 192);
+  }
+
+  .overlay {
+    position: fixed;
+    left: 0px;
+    top:0px;
+    background-color: rgba(0,0 ,0 , 0.5);
+    width: 100%;
+    height: 100%;
+    z-index:1;
+    display:none;
+    }
+
+    .popup{
+      margin: 10% auto;
+      width : 70%;
+      background-color: rgb(243, 243, 243);
+      padding: 1em;
+      box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      }
+
+      .btnClose {
+        float: right;
+        font-size:16pt;
+        cursor: pointer;
+        color: rgb(26, 26, 26);
+        }
+  .popupText {
+    text-align: center;
+  }

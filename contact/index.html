@@ -6,7 +6,19 @@
     <title>Empty parcel project</title>
   </head>
   <body>
-    <main>
+    <header>
+      <nav>
+        <ul class="flex spaceAround">
+          <a href="#"><li class="majuscule">Acceuil</li></a>
+          <a href="#"><li class="majuscule">Test de personnalité</li></a>
+          <a href="#"><li class="majuscule">Ligne du temps</li></a>
+          <a href="#"><li class="majuscule">Infos</li></a>
+          <a href="#"> <li class="majuscule">Contact</li></a>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contact">
       <h2>NOUS CONTACTER</h2>
       <p>
         Besoin de nous poser une question, d'avoir un renseignement concernant
@@ -39,23 +51,30 @@
           />
         </div>
         <div>
+          <label for="email" class="label-form">Email:</label>
+          <input type="text" name="email" id="email" value="" required />
+        </div>
+        <div>
           <label for="message" class="label-form">Votre message:</label>
           <input type="text" maxlenght="500" id="message-box" required />
         </div>
-        <input type="reset" value="Effacer" id="effacer" />
-        <input type="submit" value="Envoyer" id="envoyer" />
-        <a href="javascript:showPopup();" title="Montrer le popup">Popup !</a>
+        <button type="reset" class="envoyer effacer">Effacer</button>
+        <!--<input type="reset" value="Effacer" class="effacer" /> -->
+        <button id="btnPopup" class="btnPopup envoyer envoie">Valider</button>
+        <!-- <input type="submit" value="Envoyer" class="envoyer" /> -->
       </form>
     </div>
 
-    <div id="pop-up" class="pop-up">
-      <h3>Titre du popup</h3>
-      <p>Message du popup !</p>
-      <p>
-        Merci pour votre message. Nous prendons contact avec vous <br />
-        dans les plus bref délais !
-      </p>
-      <input type="button" value="Ok" />
+    <div id="overlay" class="overlay">
+      <div id="popup" class="popup">
+        <h2>
+          Merci pour votre message !
+          <span id="btnClose" class="btnClose">&times;</span>
+        </h2>
+        <div class="popupText">
+          Nous vous répondrons dans les plus bref délais.
+        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>
