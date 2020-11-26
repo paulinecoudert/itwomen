@@ -34,18 +34,15 @@ const btnPopup = document.getElementById('btnPopup');
 
 // faire en sorte que le bouton valider soit disabled tant que tous les inputs ne sont pas remplis
 
-// btnPopup.disabled = true;
+btnPopup.disabled = true;
 
-// ajout d'une fonction appelee des qu'une touche est enfoncee
-
-// on verifie si le champ n'est pas vide alors on desactive le bouton sinon on l'active
-/* nom.addEventListener('input', () => {
+nom.addEventListener('input', () => {
   if (nom.value) {
     btnPopup.disabled = false;
   } else {
     btnPopup.disabled = true;
   }
-}); */
+});
 
 // faire apparaître ma pop-up
 
@@ -62,4 +59,5 @@ const btnClose = document.getElementById('btnClose');
 btnClose.addEventListener('click', closeModal);
 function closeModal() {
   overlay.style.display = 'none';
+  formulaire.style.display = 'none';
 }

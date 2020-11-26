@@ -74,16 +74,19 @@ main {
 
   }
 
-  .envoie {
+  .btnPopup {
     background-color: $vert;
     color: white;
   }
-  .envoie:disabled {
-    background-color: red; 
-    cursor: default;
-    &:hover {
-      background-color:red;
-    }
+  .btnPopup:disabled {
+    background-color: grey;
+    color: black; 
+    cursor: not-allowed;
+  }
+
+  .btnPopup:hover{
+    background-color: rgb(192, 192, 192);
+    color:black
   }
 
   .effacer {
@@ -210,9 +213,6 @@ a:active {
 }
 
 
-  .btnPopup:hover{
-    background-color: rgb(192, 192, 192);
-  }
 
   .overlay {
     position: fixed;
