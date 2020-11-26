@@ -68,7 +68,7 @@ export const data = [
     id: 5,
     question: 'Si vous pouviez être un film, ça serait lequel ?',
     reponses: [
-      { r: `2001 L'odysée de l'espace`, p: 'Margaret Hamilton' },
+      { r: "2001 L'odysée de l'espace", p: 'Margaret Hamilton' },
       { r: 'Indiana Jones', p: 'Roberta William' },
       { r: 'Pulp fiction', p: 'Hedy Lamarr' },
       { r: 'Enigma', p: 'Joan Clarke' },
