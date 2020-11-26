@@ -28,7 +28,7 @@ function render(arr) {
     }
 
     if (item.id === 7) {
-      form += '<input type="submit" id="boutonResult" value="Voir mes résultats" class="boutonFinish" style="display:block"/>';
+      form += '<input type="submit" id="bouton" value="Voir mes résultats" class="boutonFinish" style="display:block"/>'; // ajouter class boutonResult a la place de id
     } else {
       form += `<input type="submit" id="bouton" value="Question suivante" class="boutonSuivant${item.id}" style="display:block" />`; // ajouter un addeventlistener
     }
