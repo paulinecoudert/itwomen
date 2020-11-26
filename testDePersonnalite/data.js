@@ -37,7 +37,7 @@ export const data = [
       { r: 'trouver la sortie dans le plus grand labyrinthe du monde', p: 'Joan Clarke' },
       { r: 'aller voir un cabaret', p: 'Hedy Lamarr' },
       { r: 'faire un safari', p: 'Roberta William' },
-      { r: 'à prendre un vol aller retour sur la lune', p: 'Margaret Hamilton' },
+      { r: 'prendre un vol aller retour sur la lune', p: 'Margaret Hamilton' },
     ],
   },
   // question3
@@ -68,7 +68,7 @@ export const data = [
     id: 5,
     question: 'Si vous pouviez être un film, ça serait lequel ?',
     reponses: [
-      { r: '2001 Lodysée de lespace', p: 'Margaret Hamilton' },
+      { r: `2001 L'odysée de l'espace`, p: 'Margaret Hamilton' },
       { r: 'Indiana Jones', p: 'Roberta William' },
       { r: 'Pulp fiction', p: 'Hedy Lamarr' },
       { r: 'Enigma', p: 'Joan Clarke' },
@@ -81,7 +81,7 @@ export const data = [
     reponses: [
       { r: 'Les crypto monnaies', p: 'Joan Clarke' },
       { r: 'Un label musical', p: 'Hedy Lamarr' },
-      { r: 'Un vignoble avec un jaccuzi et un majordome', p: 'Roberta William' },
+      { r: 'Un vignoble avec un jacuzzi et un majordome', p: 'Roberta William' },
       { r: 'Une planète', p: 'Margaret Hamilton' },
     ],
   },
