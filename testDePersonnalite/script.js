@@ -1,7 +1,10 @@
 import './style.scss';
 import $ from 'jquery';
 import { personnalites, data } from './data';
-// import { lamarrPro } from './lamarr';
+import { lamarrFooter, lamarrPro } from './lamarr';
+import { hamiltonFooter, hamiltonDescription } from './hamilton';
+import { williamsDescription, williamsFooter } from './williams';
+import { clarkeDescription, clarkeFoorter } from './clarke';
 // import axios from 'axios';
 
 function render(arr) {
@@ -118,14 +121,17 @@ document.body.addEventListener('click', (e) => {
       /// aller chercher le nom de la 1er ligne du tableau généré
       const nomGagnant = max[0].name;
       if (nomGagnant === 'Hedy Lamarr') {
-        // document.body.innerHTML += lamarrPro;
-        document.location.href = 'http://localhost:1234/lamarr.html'; //
+        document.querySelector('main').innerHTML = lamarrPro;
+        document.querySelector('footer').innerHTML = lamarrFooter;
       } else if (nomGagnant === 'Joan Clarke') {
-        window.location = 'http://localhost:1234/clarke.html';
+        document.querySelector('main').innerHTML = clarkeDescription;
+        document.querySelector('footer').innerHTML = clarkeFoorter;
       } else if (nomGagnant === 'Margaret Hamilton') {
-        window.location = 'http://localhost:1234/hamilton.html';
+        document.querySelector('main').innerHTML = hamiltonDescription;
+        document.querySelector('footer').innerHTML = hamiltonFooter;
       } else {
-        window.location = 'http://localhost:1234/williams.html';
+        document.querySelector('main').innerHTML = williamsDescription;
+        document.querySelector('footer').innerHTML = williamsFooter;
       }
     }
     /*
