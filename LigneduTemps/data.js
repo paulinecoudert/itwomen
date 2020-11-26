@@ -1,4 +1,5 @@
-var bds = [
+
+export const bds = [
   {
     id: 0,
     titre:
