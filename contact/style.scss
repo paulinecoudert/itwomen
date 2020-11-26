@@ -1,0 +1,80 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// @import "@fortawesome/fontawesome-free/css/all.css";
+// @import "node_modules/bootstrap/scss/bootstrap";
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 20px;
+}
+
+h2, p {
+    text-align: center;
+}
+
+main {
+    width: 600px;
+    height: 300px;
+    border: 1px solid lightgray;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.formulaire {
+    margin : 20px
+}
+
+  
+  .formulaire {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 600px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 255, 0.2);
+    display: none;
+  }
+  
+  #btn {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: teal;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+  }
+  
+  form > div {
+    margin: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  form > div > input {
+    border-radius: 3px;
+  }
+  
+  #message-box {
+    width: 300px;
+    height: 100px;
+  }
+  
+  .label-form {
+    display: inline-block;
+    width: 180px;
+    height: 15px;
+  }
+
+.pop-up {
+    display: none;
+}

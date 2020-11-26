@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empty parcel project</title>
+  </head>
+  <body>
+    <main>
+      <h2>NOUS CONTACTER</h2>
+      <p>
+        Besoin de nous poser une question, d'avoir un renseignement concernant
+        nos services ou de nous transmettre une remarque ? <br /><br />
+        Laissez votre message via le formulaire de contact. <br />
+        Vous serez recontacté dans la journée !
+      </p>
+      <button id="btn">Le formulaire</button>
+    </main>
+
+    <div class="formulaire" id="formulaire">
+      <h2>Laissez-nous votre message</h2>
+      <form action="#" method="post" id="form">
+        <div>
+          <label for="nom" class="label-form">Nom:</label>
+          <input type="text" name="nom" id="nom" value="" required />
+        </div>
+        <div>
+          <label for="prenom" class="label-form">Prénom:</label>
+          <input type="text" name="prenom" id="prenom" value="" required />
+        </div>
+        <div>
+          <label for="telephone" class="label-form">Numéro de téléphone:</label>
+          <input
+            type="number"
+            name="telephone"
+            id="telephone"
+            value=""
+            required
+          />
+        </div>
+        <div>
+          <label for="message" class="label-form">Votre message:</label>
+          <input type="text" maxlenght="500" id="message-box" required />
+        </div>
+        <input type="reset" value="Effacer" id="effacer" />
+        <input type="submit" value="Envoyer" id="envoyer" />
+        <a href="javascript:showPopup();" title="Montrer le popup">Popup !</a>
+      </form>
+    </div>
+
+    <div id="pop-up" class="pop-up">
+      <h3>Titre du popup</h3>
+      <p>Message du popup !</p>
+      <p>
+        Merci pour votre message. Nous prendons contact avec vous <br />
+        dans les plus bref délais !
+      </p>
+      <input type="button" value="Ok" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
