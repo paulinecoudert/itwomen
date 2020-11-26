@@ -1,36 +1,124 @@
 // @import "@fortawesome/fontawesome-free/css/all.css";
-// @import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/scss/bootstrap";
+$bleufonce: #1d3b3a;
+$vert: #377a6c;
+$vertclaire: #accdb1;
+$orange: #f25a38;
+$font: verdana;
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-}
-nav,ul {
-    width: 100%;
-    height: 75px;
-    background-color: teal;
-    color: white;
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .navigation {
-    display: flex;
-    
+  display: flex;
 }
 
 main {
-    width: 600px;
-    height: 300px;
-    border: 1px solid lightgray;
-    margin: auto;
-    margin-top: 100px;
+  width: 600px;
+  height: 300px;
+  border: 1px solid lightgray;
+  margin: auto;
+  margin-top: 100px;
 }
 
 .formulaire {
-    margin : 20px
+  margin: 20px;
+}
+// new
+.flex {
+  display: flex;
+}
+.spaceAround {
+  justify-content: space-around;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.center {
+  justify-content: center;
+}
+.alignself {
+  align-self: flex-end;
+}
+.majuscule {
+  text-transform: uppercase;
+}
+// barre nav
+nav {
+  background-color: $vert;
+  text-decoration: unset;
+  height: 50px;
+  padding: 2px;
+  ul {
+    align-items: center;
+    li {
+      list-style: none;
+      align-self: center;
+      color: $vertclaire;
+      font-family: $font;
+    }
+  }
+}
+
+.resultat {
+  height: 500px;
+  width: 1000px;
+  background-color: $bleufonce;
+  position: absolute;
+  top: 120px;
+  left: 200px;
+  .photoResultat {
+    width: 250px;
+    height: 300px;
+    position: relative;
+    top: 50px;
+    left: 100px;
+  }
+  .text {
+    width: 1000px;
+    height: 430px;
+    background-color: $vertclaire;
+    position: relative;
+    top: 170px;
+    left: 130px;
+    h2 {
+      font-family: $font;
+      text-align: justify;
+      margin: 30px;
+    }
+    p {
+      font-family: $font;
+      text-align: justify;
+      margin: 30px;
+    }
+  }
+}
+
+footer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 710px;
+  h3 {
+    font-family: $font;
+    color: $bleufonce;
+    margin: 30px;
+  }
+  .card-body {
+    background-color: $vertclaire;
+    img {
+      height: 500px;
+    }
+    h5 {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
 }
