@@ -1,6 +1,7 @@
 import './style.scss';
 import $ from 'jquery';
 import { personnalites, data } from './data';
+// import { lamarrPro } from './lamarr';
 // import axios from 'axios';
 
 function render(arr) {
@@ -20,8 +21,12 @@ function render(arr) {
         form += `<input class="radio" type="radio" name="reponse${item.id}" value="${rep.p}"> ${rep.r}<br>`;
       }
     }
-    form += '<input type="submit" id="bouton" value="Question suivante" />'; // ajouter un addeventlistener
-    form += '<input type="submit" id="rslt" value="Voir mes résultats" style="display:none"/>';
+
+    if (item.id === 7) {
+      form += '<input type="submit" id="bouton" value="Voir mes résultats" class="boutonFinish" style="display:block"/>';
+    } else {
+      form += `<input type="submit" id="bouton" value="Question suivante" class="boutonSuivant${item.id}" style="display:block" />`; // ajouter un addeventlistener
+    }
     // form += '</form>';
     form += '</div>';
   }
@@ -67,7 +72,6 @@ btns[5].addEventListener('click', () => {
 });
 btns[6].addEventListener('click', () => {
   forms[6].style.display = 'none';
-  forms[7].style.display = 'block';
 });
 
 /// récupérer les réponses, les metttres dans un tableau de point puis les trier.
@@ -81,7 +85,7 @@ const resultat = [
 ];
 // utiliser la délégation d'event. si c'est qqch qui a l'id bouton tu fais un truc...
 document.body.addEventListener('click', (e) => {
-  if (e.target.matches('#bouton')) {
+  if (e.target.matches('#bouton')) { // Si c'est le bouton "question suivante"
     // Aller chercher tous les boutons radio
     const radios = e.target.parentNode.querySelectorAll('.radio'); // On peut surement aller le chercher par le type
     console.log(radios); // 4 boutons
@@ -104,16 +108,49 @@ document.body.addEventListener('click', (e) => {
       }
     }
 
-    // trier le tableau --> celui qui a le plus de point en 1ere position.
+    // trier le tableau --> celui qui a le plus de point en 1ere position et max = le tableau
     const max = resultat.sort((a, b) => b.point - a.point);
 
     console.log(max);
 
-    // Quand on clique sur le dernier bouton "finish" de la question
+    // Si le bouton surlequel  on clique est le dernier bouton "finish"
+    if (e.target.matches('.boutonFinish')) {
+      /// aller chercher le nom de la 1er ligne du tableau généré
+      const nomGagnant = max[0].name;
+      if (nomGagnant === 'Hedy Lamarr') {
+        // document.body.innerHTML += lamarrPro;
+        document.location.href = 'http://localhost:1234/lamarr.html'; //
+      } else if (nomGagnant === 'Joan Clarke') {
+        window.location = 'http://localhost:1234/clarke.html';
+      } else if (nomGagnant === 'Margaret Hamilton') {
+        window.location = 'http://localhost:1234/hamilton.html';
+      } else {
+        window.location = 'http://localhost:1234/williams.html';
+      }
+    }
+    /*
+       const btnFinish = e.target.querySelector('.boutonFinish');
+
+    btnFinish.addEventListener('click', () => {
+      const nomGagnant = max[0].name;
+      if (nomGagnant === 'Hedy Lamarr') {
+        console.log('Tu es hedy Lamarr');
+      } else if (nomGagnant === 'Joan Clarke') {
+        console.log('Tu es Joan Clarke');
+      } else if (nomGagnant === 'Margaret Hamilton') {
+        console.log('Tu es Hamilton');
+      } else {
+        console.log('Tu es william');
+      }
+    });
+
+    */
+    /*
     // Boucler sur le tableau resultat.
     // aller chercher le 1er
     // Voir si  el.name == Clarck {
     // Alors afficher la div = descriptionCLarck
     // }
+  } */
   }
 });
