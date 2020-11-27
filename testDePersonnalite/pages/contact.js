@@ -12,7 +12,7 @@ export const contact = () => {
         Wastelin.
       </p>
     </div>
-
+    <div class="flex flex-center">
     <div id="contact">
       <h2>NOUS CONTACTER</h2>
 
@@ -60,7 +60,7 @@ export const contact = () => {
         <!-- <input type="submit" value="Envoyer" class="envoyer" /> -->
       </form>
     </div>
-
+    </div>
     <div id="overlay" class="overlay">
       <div id="popup" class="popup">
         <h2>
@@ -75,6 +75,7 @@ export const contact = () => {
     </div>
     `;
   document.querySelector('main').innerHTML = contentcontact;
+  document.querySelector('footer').innerHTML = ' ';
   // import axios from 'axios';
 
   const formulaire = document.getElementById('formulaire');
@@ -83,13 +84,7 @@ export const contact = () => {
 
   // faire déplacer ma div avec le message de contact
   btn.addEventListener('click', (e) => {
-    console.log('toto');
     e.preventDefault();
-    contact.css({
-      position: 'absolute',
-      top: '150px',
-      left: '50px',
-    });
 
     // faire apparaitre le formulaire de contact
     if (formulaire.style.display !== 'block') {

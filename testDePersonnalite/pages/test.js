@@ -11,6 +11,7 @@ export const test = () => {
   console.log('toto');
 
   function render(arr) {
+    document.querySelector('footer').innerHTML = ' ';
     const mainHtml = document.querySelector('main');
     let form = '';
     for (const item of arr) {
@@ -41,6 +42,7 @@ export const test = () => {
     // injecter dans le html
     mainHtml.innerHTML = form;
   }
+  
   render(data);
 
   // cela n'affiche que le premier

@@ -10,9 +10,12 @@ $font: verdana;
   box-sizing: border-box;
 }
 .logo {
-  color: $vertclaire;
+  color: $bleufonce;
   font-style: $font;
   font-size: x-large;
+}
+.flex-center {
+  justify-content: center;
 }
 html,
 body {
@@ -22,14 +25,6 @@ body {
 
 .navigation {
   display: flex;
-}
-
-main {
-  width: 600px;
-  height: 300px;
-  border: 1px solid lightgray;
-  margin: auto;
-  margin-top: 100px;
 }
 
 h2,
@@ -72,17 +67,23 @@ h2 {
   text-align: center;
   display: block;
 }
+// page test
+.formulaire {
+  width: 800px;
+  margin: auto;
+  margin-top: 20px;
+  border: 1px solid $vert;
+  .parQst {
+    background-color: #accdb1;
+    margin: 10px 0 10px 0;
+    line-height: 50px;
+    padding-left: 5px;
+  }
+  .marg {
+    margin-left: 20px;
+  }
+}
 
-.parQst {
-  background-color: #accdb1;
-  margin: 10px 0 10px 0;
-  height: 50px;
-  line-height: 50px;
-  padding-left: 5px;
-}
-.marg {
-  margin-left: 20px;
-}
 // new
 .flex {
   display: flex;
@@ -123,24 +124,23 @@ nav {
 }
 // main acceuil
 .acceuil {
-  height: 500px;
+  height: 450px;
   width: 1000px;
   background-color: $bleufonce;
   position: absolute;
-  top: 150px;
+  top: 120px;
   left: 100px;
   div {
-    height: 550px;
+    height: 460px;
     width: 1000px;
     background-color: $vertclaire;
     position: relative;
     top: 70px;
     left: 150px;
     article {
-      height: 500px;
+      height: 450px;
       width: 750px;
-
-      padding: 80px;
+      padding: 40px;
       position: relative;
       top: 20px;
       left: 100px;
@@ -185,9 +185,9 @@ a:active {
   height: 500px;
   width: 1000px;
   background-color: $bleufonce;
-  position: absolute;
-  top: 120px;
-  left: 200px;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 130px;
   .photoResultat {
     width: 250px;
     height: 300px;
@@ -218,8 +218,7 @@ a:active {
 footer {
   height: 100%;
   width: 100%;
-  position: absolute;
-  top: 710px;
+
   h3 {
     font-family: $font;
     color: $bleufonce;
@@ -473,24 +472,22 @@ h2,
 p {
   text-align: center;
 }
-
+/*
 main {
   width: 600px;
   height: 300px;
   border: 1px solid lightgray;
   margin: auto;
   margin-top: 20px;
-}
+}*/
 .contactAll {
   .about {
     margin: auto;
     margin-top: 30px;
-  
+
     width: 700px;
-    height: 100px;
-  
-   }
-   .formulaire {
+  }
+  .formulaire {
     margin: 20px;
   }
 
@@ -500,9 +497,6 @@ main {
     text-align: center;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 255, 0.2);
     display: none;
-    position: absolute;
-    top: 150px;
-    right: 50px;
     background-color: #accdb1;
   }
 
@@ -571,13 +565,7 @@ main {
   .pop-up {
     display: none;
   }
-
-  
-  
-
 }
-
-
 
 .overlay {
   position: fixed;
@@ -607,4 +595,21 @@ main {
 }
 .popupText {
   text-align: center;
+}
+// page ressources
+.ressources {
+  .title {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 90%;
+  }
+  .container1 {
+    width: 90%;
+    margin: auto;
+  }
+  .container2 {
+    width: 90%;
+    margin: auto;
+  }
 }

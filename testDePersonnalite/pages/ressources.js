@@ -1,17 +1,7 @@
-export const ressourcesTest = `
-<header>
-<nav>
-  <ul class="flex spaceAround">
-    <a href="#"><li class="majuscule">Acceuil</li></a>
-    <a href="#"><li class="majuscule">Test de personnalité</li></a>
-    <a href="#"><li class="majuscule">Ligne du temps</li></a>
-    <a href="#"><li class="majuscule">Infos</li></a>
-    <a href="#"> <li class="majuscule">Contact</li></a>
-  </ul>
-</nav>
-</header>
-<div>
-<div class="title">
+export const ressources = () => {
+  const contentressource = `
+  <div class="ressources">
+    <div class="title">
 <h1>Pour aller plus loin</h1>
       <h3>
         Quelques ressources pour en savoir plus sur les femmes dans l’informatique
@@ -117,5 +107,8 @@ export const ressourcesTest = `
   </div>
 </div>
 </div>
-</div>`;
-
+</div>
+    `;
+  document.querySelector('main').innerHTML = contentressource;
+  document.querySelector('footer').innerHTML = ' ';
+};

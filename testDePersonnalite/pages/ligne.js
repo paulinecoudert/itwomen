@@ -22,6 +22,7 @@ export const ligne = () => {
     app.innerHTML = data;
     */
   function render(textes) {
+    document.querySelector('footer').innerHTML = ' ';
     const mainHtml = document.querySelector('main');
     let form = '';
     for (const texte of textes) {
@@ -98,4 +99,5 @@ export const ligne = () => {
       paras[5].style.display = 'none';
     }
   });
+
 };
