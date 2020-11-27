@@ -1,8 +1,8 @@
 import $ from 'jquery';
 
-
 export const contact = () => {
   const contentcontact = `
+  <div class="contactAll">
     <div class="about">
       <p class="about-us">
         Ce site a été réalisé dans le cadre de l’Hackathon 2020 Code and Decode
@@ -13,7 +13,7 @@ export const contact = () => {
       </p>
     </div>
 
-    <main id="contact">
+    <div id="contact">
       <h2>NOUS CONTACTER</h2>
 
       <p>
@@ -23,7 +23,7 @@ export const contact = () => {
         Vous serez recontacté dans la journée !
       </p>
       <button id="btn">Le formulaire</button>
-    </main>
+    </div>
 
     <div class="formulaire" id="formulaire">
       <h2>Laissez-nous votre message</h2>
@@ -72,8 +72,9 @@ export const contact = () => {
         </div>
       </div>
     </div>
+    </div>
     `;
-
+  document.querySelector('main').innerHTML = contentcontact;
   // import axios from 'axios';
 
   const formulaire = document.getElementById('formulaire');
@@ -135,5 +136,4 @@ export const contact = () => {
     overlay.style.display = 'none';
     formulaire.style.display = 'none';
   }
-  document.querySelector('main').innerHTML = contentcontact;
 };

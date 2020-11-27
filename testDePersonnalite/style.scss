@@ -481,182 +481,103 @@ main {
   margin: auto;
   margin-top: 20px;
 }
-.about {
-  margin: auto;
-  margin-top: 30px;
-
-  width: 700px;
-  height: 100px;
-}
-
-.formulaire {
-  margin: 20px;
-}
-
-.formulaire {
-  margin-bottom: 10px;
-  width: 600px;
-  text-align: center;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 255, 0.2);
-  display: none;
-  position: absolute;
-  top: 150px;
-  right: 50px;
-  background-color: #accdb1;
-}
-
-#btn {
-  display: block;
-  margin: auto;
-  width: 200px;
-  height: 40px;
-  border-radius: 20px;
-  background-color: $vert;
-  border: 1px solid white;
-  color: white;
-  cursor: pointer;
-}
-
-.effacer,
-.envoyer {
-  margin: 10px;
-  width: 200px;
-  height: 40px;
-  border-radius: 20px;
-  border: 1px solid white;
-  cursor: pointer;
-}
-
-.btnPopup {
-  background-color: $vert;
-  color: white;
-}
-.btnPopup:disabled {
-  background-color: grey;
-  color: black;
-  cursor: not-allowed;
-}
-
-.btnPopup:hover {
-  background-color: rgb(192, 192, 192);
-  color: black;
-}
-
-.effacer {
-  background-color: white;
-  color: black;
-}
-
-form > div {
-  margin: 10px;
-  padding: 5px;
-  box-sizing: border-box;
-}
-form > div > input {
-  border-radius: 3px;
-}
-
-#message-box {
-  width: 300px;
-  height: 100px;
-}
-
-.label-form {
-  display: inline-block;
-  width: 180px;
-  height: 15px;
-}
-
-.pop-up {
-  display: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.flex {
-  display: flex;
-}
-.spaceAround {
-  justify-content: space-around;
-}
-.flex-end {
-  justify-content: flex-end;
-}
-.center {
-  justify-content: center;
-}
-.alignself {
-  align-self: flex-end;
-}
-.majuscule {
-  text-transform: uppercase;
-}
-
-$bleufonce: #1d3b3a;
-$vert: #377a6c;
-$vertclaire: #accdb1;
-$orange: #f25a38;
-$font: verdana;
-
-.flex {
-  display: flex;
-}
-.spaceAround {
-  justify-content: space-around;
-}
-.flex-end {
-  justify-content: flex-end;
-}
-.center {
-  justify-content: center;
-}
-.alignself {
-  align-self: flex-end;
-}
-.majuscule {
-  text-transform: uppercase;
-}
-
-// barre nav
-nav {
-  background-color: $vert;
-  text-decoration: unset;
-  height: 50px;
-  padding: 2px;
-  ul {
-    align-items: center;
-    line-height: 50px;
-
-    li {
-      list-style: none;
-      align-self: center;
-      color: $vertclaire;
-      font-family: $font;
-    }
+.contactAll {
+  .about {
+    margin: auto;
+    margin-top: 30px;
+  
+    width: 700px;
+    height: 100px;
+  
+   }
+   .formulaire {
+    margin: 20px;
   }
+
+  .formulaire {
+    margin-bottom: 10px;
+    width: 600px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 255, 0.2);
+    display: none;
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    background-color: #accdb1;
+  }
+
+  #btn {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: $vert;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+  }
+
+  .effacer,
+  .envoyer {
+    margin: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid white;
+    cursor: pointer;
+  }
+
+  .btnPopup {
+    background-color: $vert;
+    color: white;
+  }
+  .btnPopup:disabled {
+    background-color: grey;
+    color: black;
+    cursor: not-allowed;
+  }
+
+  .btnPopup:hover {
+    background-color: rgb(192, 192, 192);
+    color: black;
+  }
+
+  .effacer {
+    background-color: white;
+    color: black;
+  }
+
+  form > div {
+    margin: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  form > div > input {
+    border-radius: 3px;
+  }
+
+  #message-box {
+    width: 300px;
+    height: 100px;
+  }
+
+  .label-form {
+    display: inline-block;
+    width: 180px;
+    height: 15px;
+  }
+
+  .pop-up {
+    display: none;
+  }
+
+  
+  
+
 }
 
-a:link {
-  text-decoration: none;
-}
 
-a:visited {
-  text-decoration: none;
-  background-color: $vert;
-  color: $vertclaire;
-  font-family: $font;
-}
-
-a:hover {
-  text-decoration: underline overline white;
-}
-
-a:active {
-  background-color: white;
-  color: $vert;
-}
 
 .overlay {
   position: fixed;
