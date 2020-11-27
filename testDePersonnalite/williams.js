@@ -67,7 +67,7 @@ export const williamsFooter = `<h3>Vous auriez pu être ...</h3>
           src="lamarr.jpg"
           alt="Card image cap"
         />
-        <h5 class="card-title">Roberta Williams</h5>
+        <h5 class="card-title">Hedy Lamarr</h5>
         <p class="card-text">
           Hedy Lamarr en chiffres ça donne : trente films, le premier
           orgasme sur grand écran, six maris, une étoile sur le « Walk of
