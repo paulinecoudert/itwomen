@@ -12,7 +12,7 @@ btn.addEventListener('click', (e) => {
   e.preventDefault();
   contact.css({
     position: 'absolute',
-    top: '30px',
+    top: '150px',
     left: '50px',
   });
 

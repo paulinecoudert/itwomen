@@ -19,6 +19,12 @@ html, body {
     padding: 0;
 }
 
+.about-us {
+  text-align: center;
+  font-weight: bold;
+  color: #377a6c;
+}
+
 h2 {
     margin: 20px;
 }
@@ -32,7 +38,14 @@ main {
     height: 300px;
     border: 1px solid lightgray;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 20px;
+}
+.about {
+  margin: auto;
+  margin-top: 30px;
+
+  width: 700px;
+  height: 100px
 }
 
 .formulaire {
@@ -47,7 +60,7 @@ main {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 255, 0.2);
     display: none;
     position: absolute;
-    top: 70px;
+    top: 150px;
     right: 50px;
     background-color:  #accdb1;
   }
