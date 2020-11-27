@@ -1,15 +1,62 @@
 // @import "@fortawesome/fontawesome-free/css/all.css";
-// @import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+$bleufonce: #1d3b3a;
 $vert: #377a6c;
-$vertfonce: #1d3b3a;
 $vertclaire: #accdb1;
+$orange: #f25a38;
+$font: verdana;
+
+* {
+  box-sizing: border-box;
+}
+.logo {
+  color: $vertclaire;
+  font-style: $font;
+  font-size: x-large;
+}
+
+.flex {
+  display: flex;
+}
+.spaceAround {
+  justify-content: space-around;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.center {
+  justify-content: center;
+}
+.alignself {
+  align-self: flex-end;
+}
+.majuscule {
+  text-transform: uppercase;
+}
+// barre nav
+nav {
+  background-color: $vert;
+  text-decoration: unset;
+  height: 50px;
+  padding: 2px;
+  ul {
+    align-items: center;
+    li {
+      list-style: none;
+      align-self: center;
+      color: $vertclaire;
+      font-family: $font;
+    }
+  }
+}
 
 .timeline {
   position: absolute;
   width: 10px;
   height: 2100px;
   margin: 0 auto;
-  top: 100px;
+  top: 150px;
   left: 50%;
   padding-top: 50px;
   background: #377a6c;
@@ -80,30 +127,44 @@ $vertclaire: #accdb1;
     display: inline-block;
   }
 }
+p {
+  font-style: $font;
+  font-size: large;
+  margin-top: 40px;
+  text-align: justify;
+}
 
 #test-0 {
   border: 3px $vert solid;
   border-radius: 10px;
-  font-size: 16px;
+  font-style: $font;
+  text-align: justify;
+  font-size: large;
   padding: 10px;
   left: 60%;
   top: 160px;
   position: absolute;
   width: 400px;
-  height: 210px;
+  
   #btn {
     position: absolute;
     padding: 3px;
     border: 1px $vert solid;
     border-radius: 3px;
-    left: 280px;
-    top: 197px;
+    left: 270px;
+    top: 80px;
     background-color: $vert;
+    p {
+      font-style: $font;
+      font-size: large;
+    }
   }
 }
 
 #test-1 {
   border: 3px $vert solid;
+  font-style: $font;
+  text-align: justify;
   border-radius: 10px;
   padding: 10px;
   padding-top: 0px;
@@ -111,95 +172,102 @@ $vertclaire: #accdb1;
   top: 470px;
   position: absolute;
   width: 400px;
-  height: 240px;
+  
   #btn {
     position: absolute;
     padding: 3px;
     border: 1px $vert solid;
     border-radius: 3px;
     left: 280px;
-    top: 217px;
+    top: 145px;
     background-color: $vert;
   }
 }
 
 #test-2 {
   border: 3px $vert solid;
+  font-style: $font;
+  text-align: justify;
   border-radius: 10px;
   padding: 10px;
   left: 60%;
   top: 820px;
   position: absolute;
   width: 400px;
-  height: 250px;
+ 
   #btn {
     position: absolute;
     padding: 3px;
     border: 1px $vert solid;
     border-radius: 3px;
     left: 280px;
-    top: 237px;
+    top: 120px;
     background-color: $vert;
   }
 }
 
 #test-3 {
   border: 3px $vert solid;
+  font-style: $font;
+  text-align: justify;
   border-radius: 10px;
   padding: 10px;
   left: 20%;
   top: 1150px;
   position: absolute;
   width: 400px;
-  height: 270px;
+ 
   #btn {
     position: absolute;
     padding: 3px;
     border: 1px $vert solid;
     border-radius: 3px;
     left: 280px;
-    top: 257px;
+    top: 190px;
     background-color: $vert;
   }
 }
 
 #test-4 {
   border: 3px $vert solid;
+  font-style: $font;
+  text-align: justify;
   border-radius: 10px;
   padding: 10px;
   left: 60%;
   top: 1520px;
   position: absolute;
   width: 400px;
-  height: 250px;
+  
   #btn {
     position: absolute;
     padding: 3px;
     border: 1px $vert solid;
     border-radius: 3px;
     left: 280px;
-    top: 237px;
+    top: 110px;
     background-color: $vert;
   }
 }
 
 #test-5 {
   border: 3px $vert solid;
-
+  font-style: $font;
+  text-align: justify;
   border-radius: 10px;
   padding: 10px;
   left: 20%;
   top: 1900px;
   position: absolute;
   width: 400px;
-  height: 210px;
+  
   #btn {
     position: absolute;
     padding: 3px;
     border: 1px $vert solid;
     border-radius: 3px;
     left: 280px;
-    top: 197px;
+    top: 100px;
     background-color: $vert;
   }
 }
