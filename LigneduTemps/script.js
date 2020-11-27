@@ -1,6 +1,6 @@
 import './style.scss';
 import $ from 'jquery';
-import { bds } from './data.js';
+import { bds } from '../testDePersonnalite/dataligne.js';
 // import axios from 'axios';
 
 // ${livre.resume.substr(0, 31)}

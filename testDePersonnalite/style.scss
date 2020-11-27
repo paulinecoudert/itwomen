@@ -9,7 +9,11 @@ $font: verdana;
 * {
   box-sizing: border-box;
 }
-
+.logo {
+  color: $vertclaire;
+  font-style: $font;
+  font-size: x-large;
+}
 html,
 body {
   margin: 0;
@@ -28,7 +32,9 @@ main {
   margin-top: 100px;
 }
 
-h2, p, input  {
+h2,
+p,
+input {
   font-family: $font;
   text-align: justify;
 }
@@ -41,33 +47,30 @@ h2 {
   position: relative;
   bottom: 5px;
   left: 350px;
-    width: 200px;
-    height: 40px;
-    border-radius: 20px;
-    border: 1px solid white;
-    cursor: pointer;
-    background-color: $vert;
-    color: white;
-    text-align: center;
-    display: block;
-
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid white;
+  cursor: pointer;
+  background-color: $vert;
+  color: white;
+  text-align: center;
+  display: block;
 }
 
 #boutonResult {
-    margin:auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-      width: 200px;
-      height: 40px;
-      border-radius: 20px;
-      border: 1px solid white;
-      cursor: pointer;
-      background-color: #f25a38;
-      color: white;
-      text-align: center;
-      display: block;
-  
-  
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid white;
+  cursor: pointer;
+  background-color: #f25a38;
+  color: white;
+  text-align: center;
+  display: block;
 }
 
 .parQst {
@@ -100,7 +103,6 @@ h2 {
   text-transform: uppercase;
 }
 
-
 // barre nav
 nav {
   background-color: $vert;
@@ -110,41 +112,74 @@ nav {
   ul {
     align-items: center;
     line-height: 50px;
-     
+
     li {
       list-style: none;
       align-self: center;
       color: $vertclaire;
       font-family: $font;
+    }
+  }
+}
+// main acceuil
+.acceuil {
+  height: 500px;
+  width: 1000px;
+  background-color: $bleufonce;
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  div {
+    height: 550px;
+    width: 1000px;
+    background-color: $vertclaire;
+    position: relative;
+    top: 70px;
+    left: 150px;
+    article {
+      height: 500px;
+      width: 750px;
 
+      padding: 80px;
+      position: relative;
+      top: 20px;
+      left: 100px;
+      font-family: $font;
+      button {
+        background-color: $vertclaire;
+        border: 2px solid $bleufonce;
+        border-radius: 5px;
+        color: $bleufonce;
+        position: relative;
+        top: 100px;
+        left: 550px;
+        height: 50px;
+        width: 200px;
+        font-family: $font;
+      }
     }
   }
 }
 
-a:link 
-{ 
- text-decoration:none; 
-} 
+a:link {
+  text-decoration: none;
+}
 
 a:visited {
-  text-decoration:none; 
+  text-decoration: none;
   background-color: $vert;
   color: $vertclaire;
   font-family: $font;
-
 }
 
 a:hover {
   text-decoration: underline overline white;
-
 }
 
 a:active {
   background-color: white;
   color: $vert;
-
 }
-
 
 .resultat {
   height: 500px;
@@ -201,4 +236,454 @@ footer {
     }
   }
 }
+// ligne du temps
+.timeline {
+  position: absolute;
+  width: 10px;
+  height: 2100px;
+  margin: 0 auto;
+  top: 150px;
+  left: 50%;
+  padding-top: 50px;
+  background: #377a6c;
 
+  .dotun {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    top: 40px;
+    left: -13px;
+    background-color: $vertclaire;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dotdeux {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    top: 280px;
+    left: -23px;
+    background-color: $vertclaire;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dottrois {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    top: 600px;
+    left: -13px;
+    background-color: $vertclaire;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dotquatre {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    top: 880px;
+    left: -23px;
+    background-color: $vertclaire;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dotcinq {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    top: 1200px;
+    left: -13px;
+    background-color: $vertclaire;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .dotsix {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    top: 1520px;
+    left: -23px;
+    background-color: $vertclaire;
+    border-radius: 50%;
+    display: inline-block;
+  }
+}
+p {
+  font-style: $font;
+  font-size: large;
+  margin-top: 40px;
+  text-align: justify;
+}
+
+#test-0 {
+  border: 3px $vert solid;
+  border-radius: 10px;
+  font-style: $font;
+  text-align: justify;
+  font-size: large;
+  padding: 10px;
+  left: 60%;
+  top: 160px;
+  position: absolute;
+  width: 400px;
+
+  #btn {
+    position: absolute;
+    padding: 3px;
+    border: 1px $vert solid;
+    border-radius: 3px;
+    left: 270px;
+    top: 80px;
+    background-color: $vert;
+    p {
+      font-style: $font;
+      font-size: large;
+    }
+  }
+}
+
+#test-1 {
+  border: 3px $vert solid;
+  font-style: $font;
+  text-align: justify;
+  border-radius: 10px;
+  padding: 10px;
+  padding-top: 0px;
+  left: 20%;
+  top: 470px;
+  position: absolute;
+  width: 400px;
+
+  #btn {
+    position: absolute;
+    padding: 3px;
+    border: 1px $vert solid;
+    border-radius: 3px;
+    left: 280px;
+    top: 145px;
+    background-color: $vert;
+  }
+}
+
+#test-2 {
+  border: 3px $vert solid;
+  font-style: $font;
+  text-align: justify;
+  border-radius: 10px;
+  padding: 10px;
+  left: 60%;
+  top: 820px;
+  position: absolute;
+  width: 400px;
+
+  #btn {
+    position: absolute;
+    padding: 3px;
+    border: 1px $vert solid;
+    border-radius: 3px;
+    left: 280px;
+    top: 120px;
+    background-color: $vert;
+  }
+}
+
+#test-3 {
+  border: 3px $vert solid;
+  font-style: $font;
+  text-align: justify;
+  border-radius: 10px;
+  padding: 10px;
+  left: 20%;
+  top: 1150px;
+  position: absolute;
+  width: 400px;
+
+  #btn {
+    position: absolute;
+    padding: 3px;
+    border: 1px $vert solid;
+    border-radius: 3px;
+    left: 280px;
+    top: 190px;
+    background-color: $vert;
+  }
+}
+
+#test-4 {
+  border: 3px $vert solid;
+  font-style: $font;
+  text-align: justify;
+  border-radius: 10px;
+  padding: 10px;
+  left: 60%;
+  top: 1520px;
+  position: absolute;
+  width: 400px;
+
+  #btn {
+    position: absolute;
+    padding: 3px;
+    border: 1px $vert solid;
+    border-radius: 3px;
+    left: 280px;
+    top: 110px;
+    background-color: $vert;
+  }
+}
+
+#test-5 {
+  border: 3px $vert solid;
+  font-style: $font;
+  text-align: justify;
+  border-radius: 10px;
+  padding: 10px;
+  left: 20%;
+  top: 1900px;
+  position: absolute;
+  width: 400px;
+
+  #btn {
+    position: absolute;
+    padding: 3px;
+    border: 1px $vert solid;
+    border-radius: 3px;
+    left: 280px;
+    top: 100px;
+    background-color: $vert;
+  }
+}
+// contact
+
+.about-us {
+  text-align: center;
+  font-weight: bold;
+  color: #377a6c;
+}
+
+h2 {
+  margin: 20px;
+}
+
+h2,
+p {
+  text-align: center;
+}
+
+main {
+  width: 600px;
+  height: 300px;
+  border: 1px solid lightgray;
+  margin: auto;
+  margin-top: 20px;
+}
+.about {
+  margin: auto;
+  margin-top: 30px;
+
+  width: 700px;
+  height: 100px;
+}
+
+.formulaire {
+  margin: 20px;
+}
+
+.formulaire {
+  margin-bottom: 10px;
+  width: 600px;
+  text-align: center;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 255, 0.2);
+  display: none;
+  position: absolute;
+  top: 150px;
+  right: 50px;
+  background-color: #accdb1;
+}
+
+#btn {
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: $vert;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.effacer,
+.envoyer {
+  margin: 10px;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.btnPopup {
+  background-color: $vert;
+  color: white;
+}
+.btnPopup:disabled {
+  background-color: grey;
+  color: black;
+  cursor: not-allowed;
+}
+
+.btnPopup:hover {
+  background-color: rgb(192, 192, 192);
+  color: black;
+}
+
+.effacer {
+  background-color: white;
+  color: black;
+}
+
+form > div {
+  margin: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+form > div > input {
+  border-radius: 3px;
+}
+
+#message-box {
+  width: 300px;
+  height: 100px;
+}
+
+.label-form {
+  display: inline-block;
+  width: 180px;
+  height: 15px;
+}
+
+.pop-up {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+.spaceAround {
+  justify-content: space-around;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.center {
+  justify-content: center;
+}
+.alignself {
+  align-self: flex-end;
+}
+.majuscule {
+  text-transform: uppercase;
+}
+
+$bleufonce: #1d3b3a;
+$vert: #377a6c;
+$vertclaire: #accdb1;
+$orange: #f25a38;
+$font: verdana;
+
+.flex {
+  display: flex;
+}
+.spaceAround {
+  justify-content: space-around;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.center {
+  justify-content: center;
+}
+.alignself {
+  align-self: flex-end;
+}
+.majuscule {
+  text-transform: uppercase;
+}
+
+// barre nav
+nav {
+  background-color: $vert;
+  text-decoration: unset;
+  height: 50px;
+  padding: 2px;
+  ul {
+    align-items: center;
+    line-height: 50px;
+
+    li {
+      list-style: none;
+      align-self: center;
+      color: $vertclaire;
+      font-family: $font;
+    }
+  }
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  background-color: $vert;
+  color: $vertclaire;
+  font-family: $font;
+}
+
+a:hover {
+  text-decoration: underline overline white;
+}
+
+a:active {
+  background-color: white;
+  color: $vert;
+}
+
+.overlay {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+}
+
+.popup {
+  margin: 10% auto;
+  width: 70%;
+  background-color: rgb(243, 243, 243);
+  padding: 1em;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.btnClose {
+  float: right;
+  font-size: 16pt;
+  cursor: pointer;
+  color: rgb(26, 26, 26);
+}
+.popupText {
+  text-align: center;
+}
