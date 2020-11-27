@@ -31,28 +31,30 @@ export const hamiltonFooter = `<h3>Vous auriez pu être ...</h3>
   <div class="col-sm-4">
     <div class="card">
       <div class="card-body">
-        <img
-          class="card-img-top"
-          src="clarke.jpg"
-          alt="Card image cap"
-        />
-        <h5 class="card-title">Margaret Hamilton</h5>
+      <img
+      class="card-img-top"
+      src="lamarr.jpg"
+      alt="Card image cap"
+    />
+        <h5 class="card-title">Hedy Lamarr</h5>
         <p class="card-text">
-          Derrière l’un des premiers ordinateurs, la « Bombe », se cachait
-          Alain Turing. Derrière lui, se cachait Joan Clarke.
+        Hedy Lamarr en chiffres ça donne : trente films, le premier
+        orgasme sur grand écran, six maris, une étoile sur le « Walk of
+        Fame », mille vies et 88 fréquences…
         </p>
         <p>
-          La cryptologue britannique a participé au décryptage de la
-          machine Enigma, créée en 1919 par Arthur Scherbius, qui a été
-          principalement utilisée par l’Allemagne nazie pour coder ses
-          messages.Pour décoder le chiffrement du IIIe Reich, l’équipe de
-          Turing a inventé la machine nommée « The Bomb » - d'après les
-          bruits du tic-tac produit pendant les calculs.
+        A Hollywood, Hedy Lamarr est, avec son compagnon de l’époque, le
+          compositeur George Antheil, à l’origine de la technique de «
+          zapping » radio.
         </p>
         <p>
-          Ses travaux lui valent d’être décorée par le gouvernement
-          britannique après la guerre. En 2015, Joan Clarke est incarnée à
-          l’écran par Keira Knightley dans le film Imitation Game.
+        Calqué sur le nombre de touches d’un piano, ce système de
+        communications novateur séquence l’information sur plusieurs
+        fréquences entre l’émetteur et le récepteur. Brevetée en 1941 -
+        mais cédée très vite à l’armée américaine par patriotisme et
+        utilisée vingt après pendant la crise de Cuba - cette invention
+        technologique est à l’origine du Wi-Fi, du GPS ou encore du
+        Bluetooth.
         </p>
       </div>
     </div>
@@ -93,28 +95,26 @@ export const hamiltonFooter = `<h3>Vous auriez pu être ...</h3>
       <div class="card-body">
         <img
           class="card-img-top"
-          src="lamarr.jpg"
+          src="clarke.jpg"
           alt="Card image cap"
         />
         <h5 class="card-title">Joan Clarke</h5>
         <p class="card-text">
-          Hedy Lamarr en chiffres ça donne : trente films, le premier
-          orgasme sur grand écran, six maris, une étoile sur le « Walk of
-          Fame », mille vies et 88 fréquences…
+        Derrière l’un des premiers ordinateurs, la « Bombe », se cachait
+        Alain Turing. Derrière lui, se cachait Joan Clarke.
         </p>
         <p>
-          A Hollywood, Hedy Lamarr est, avec son compagnon de l’époque, le
-          compositeur George Antheil, à l’origine de la technique de «
-          zapping » radio.
+        La cryptologue britannique a participé au décryptage de la machine
+        Enigma, créée en 1919 par Arthur Scherbius, qui a été
+        principalement utilisée par l’Allemagne nazie pour coder ses
+        messages.Pour décoder le chiffrement du IIIe Reich, l’équipe de
+        Turing a inventé la machine nommée « The Bomb » - d'après les
+        bruits du tic-tac produit pendant les calculs.
         </p>
         <p>
-          Calqué sur le nombre de touches d’un piano, ce système de
-          communications novateur séquence l’information sur plusieurs
-          fréquences entre l’émetteur et le récepteur. Brevetée en 1941 -
-          mais cédée très vite à l’armée américaine par patriotisme et
-          utilisée vingt après pendant la crise de Cuba - cette invention
-          technologique est à l’origine du Wi-Fi, du GPS ou encore du
-          Bluetooth.
+        Ses travaux lui valent d’être décorée par le gouvernement
+        britannique après la guerre. En 2015, Joan Clarke est incarnée à
+        l’écran par Keira Knightley dans le film Imitation Game.
         </p>
       </div>
     </div>
