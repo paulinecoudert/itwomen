@@ -13,9 +13,9 @@ export const home = () => {
           <h2 class="logo">{logiciELLES}</h2>
           <p>
           Vous êtes une femme ?</p><p>
-          La programmation vous intéresse ou vous vous demandez à quoi ça sert?</p><p>
-          Combien d'informaticiennes connaissez-vous? Aucune!?!
-          Alors découvrez les informaticiennes les plus brillantes qui ont façonné l’histoire du numérique à travers un test!
+          La programmation vous intéresse ou vous vous demandez à quoi ça sert ?</p><p>
+          Combien d'informaticiennes connaissez-vous ? Aucune !?!
+          Alors découvrez les informaticiennes les plus brillantes qui ont façonné l’histoire du numérique à travers un test !
           Vous pourriez même vous rendre compte que vous ressemblez beaucoup à l’une d’entre elles
           </p>
           <button class="go_test majuscule">passer le test de personalité</button>
